@@ -170,7 +170,7 @@ class Box {
     ctx.fillStyle = bgColor
     ctx.textAlign = 'center'
     ctx.fillText(
-      'Drag me)',
+      'Drag me',
       ((this.corners[0][0] + mouse.mx) / 2 + 2 + this.width / 4),
       ((this.corners[0][1] + mouse.my) / 2 + 2 + this.height / 4)
     )
