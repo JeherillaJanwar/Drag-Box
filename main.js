@@ -16,7 +16,7 @@ let box
 function init() {
   canvas.width = innerWidth * pixelRatio
   canvas.height = innerHeight * pixelRatio
-  ctx.scale(pixelRatio, pixelRatio)
+//  ctx.scale(pixelRatio, pixelRatio)
 
   window.mouse = {
     isDown: false,
@@ -169,7 +169,7 @@ class Box {
     ctx.fillStyle = bgColor
     ctx.textAlign = 'center'
     ctx.fillText(
-      'Drag this',
+      'Drag this with a pointer (desktop)',
       ((this.corners[0][0] + mouse.mx) / 2 + 2 + this.width / 4),
       ((this.corners[0][1] + mouse.my) / 2 + 2 + this.height / 4)
     )
